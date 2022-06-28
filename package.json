@@ -6,7 +6,7 @@
   "scripts": {
     "test": "clear",
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack "
   },
   "author": "",
   "license": "ISC",
