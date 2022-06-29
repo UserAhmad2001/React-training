@@ -1,13 +1,30 @@
 *{
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    height: 80;
     margin: auto;
     margin-top: 1rem;
-    box-shadow: 0 1px 5px 5px #0000007a;
-    border-radius: .3rem;
-    padding: 1rem;
+    box-shadow: 0 1px 10px 2px #0000007a;
+    border-radius: 1rem;
+    background: linear-gradient(0deg,#0c011f,#3a1a75);
+    color: white;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    transition: all .5s linear;
+
+}
+
+
+.root>img{
+    width: 100%;
 }
 
 
@@ -15,12 +32,66 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 20%;
+    margin: 1rem 0 2rem 0;
 }
+.titles>h4{
+    flex-basis: 0%;
+    margin: 0;
+    padding: 0;
+    font-weight: 10;
+    font-size: medium;
+}
+.titles>h1{
+    flex-basis: 0%;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn1,.btn2{
+    margin: .5rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+    color: rgb(10, 0, 28);
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 100;
+}
+.btn2{
+    background-color: #509fff;
+    color: white;
+}
+
 
 
 
 .info{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
+    margin: 1rem;
+    margin-bottom: 0 ;
 }
+
+.info>h2{
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(255, 224, 98) !important;
+}
+
+.info>h4{
+    margin: 0;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
